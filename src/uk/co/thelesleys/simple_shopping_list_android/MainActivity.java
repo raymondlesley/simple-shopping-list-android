@@ -3,8 +3,8 @@ package uk.co.thelesleys.simple_shopping_list_android;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
-import android.view.MenuItem;
-import android.support.v4.app.NavUtils;
+// import android.view.MenuItem;
+// import android.support.v4.app.NavUtils;
 
 public class MainActivity extends Activity {
 
