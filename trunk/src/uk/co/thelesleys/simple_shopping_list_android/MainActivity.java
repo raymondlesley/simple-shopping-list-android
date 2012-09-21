@@ -71,6 +71,7 @@ public class MainActivity extends Activity {
 			}
 
 			return true;  // handled
+
 		case R.id.menu_about:
 			Log.i("MainActivity", "Menu item: About");
 
@@ -84,6 +85,7 @@ public class MainActivity extends Activity {
 
 			return true;  // handled
 		}
+
 		return super.onOptionsItemSelected(item);
 	}
     
