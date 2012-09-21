@@ -3,6 +3,16 @@
 	android:layout_width="fill_parent"
 	android:layout_height="fill_parent" >
 
+	<TextView
+		android:id="@+id/empty_text"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_centerVertical="true"
+		android:cacheColorHint="#00000000"
+		android:text="@string/empty_list"
+		android:textSize="24sp" />
+
 	<ListView
 		android:id="@+id/main_list"
 		android:layout_width="fill_parent"
