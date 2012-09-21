@@ -62,7 +62,7 @@ public class MainActivity extends Activity {
 		        // Third parameter - ID of the TextView to which the data is written
 		        // Forth - the Array of data
 		        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-				          android.R.layout.simple_list_item_1, android.R.id.text1, values);
+				          R.layout.list_view, R.id.list_view_item, values);
 		        // Assign adapter to ListView
 		        listView.setAdapter(adapter); 
 			}
