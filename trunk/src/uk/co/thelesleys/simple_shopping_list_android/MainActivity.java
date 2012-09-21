@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 // TODO: work through http://www.vogella.com/articles/AndroidListView/article.html
 //       (or similar)
@@ -64,7 +65,9 @@ public class MainActivity extends Activity {
 		        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
 				          R.layout.list_view, R.id.list_view_item, values);
 		        // Assign adapter to ListView
-		        listView.setAdapter(adapter); 
+		        listView.setAdapter(adapter);
+
+		        ((TextView)findViewById(R.id.empty_text)).setVisibility(adapter.getCount() == 0 ? TextView.VISIBLE : TextView.GONE); // show if 0; don't if >0
 			}
 
 			return true;  // handled
@@ -75,6 +78,8 @@ public class MainActivity extends Activity {
 		        // TODO: for RAD only - dummy implementation!
 		        ListView listView = (ListView)findViewById(R.id.main_list);
 		        listView.setAdapter(null);
+
+		        ((TextView)findViewById(R.id.empty_text)).setVisibility(TextView.VISIBLE); // show if 0; don't if >0
 			}
 
 			return true;  // handled
